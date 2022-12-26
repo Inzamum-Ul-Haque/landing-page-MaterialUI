@@ -30,7 +30,18 @@ const Branding = () => {
         </Typography>
         <Button sx={{ width: "50%" }}>Hire Us</Button>
       </Stack>
-      <Box sx={{ width: "60%" }}>
+      <Box
+        sx={{
+          width: "60%",
+          display: ["none", "none", "block"],
+          // this is the same meaning as this
+          // display: {
+          //   xs: "none",
+          //   sm: "none",
+          //   md: "block",
+          // },
+        }}
+      >
         <img
           src="https://i.ibb.co/sPXVMbC/Frame.png"
           style={{ width: "100%" }}
