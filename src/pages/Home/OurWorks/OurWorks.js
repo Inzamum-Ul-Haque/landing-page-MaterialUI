@@ -12,7 +12,7 @@ const OurWorks = () => {
   };
 
   return (
-    <Box sx={{ mt: 5 }}>
+    <Box sx={{ my: 5, mb: 10 }}>
       <Box
         sx={{
           display: "flex",
@@ -26,10 +26,26 @@ const OurWorks = () => {
           sx={{ textAlign: "left" }}
         />
         <Box>
-          <Tabs value={value} onChange={handleChange} centered>
-            <Tab label="Item One" />
-            <Tab label="Item Two" />
-            <Tab label="Item Three" />
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            centered
+            sx={{
+              "& .MuiTabs-indicator": {
+                display: "none",
+              },
+              "& .Mui-selected": {
+                color: "primary.green",
+                fontWeight: "bold",
+              },
+              "& .MuiButtonBase-root": {
+                textTransform: "capitalize",
+              },
+            }}
+          >
+            <Tab label="All" />
+            <Tab label="Web Design" />
+            <Tab label="Mobile App" />
           </Tabs>
         </Box>
       </Box>
