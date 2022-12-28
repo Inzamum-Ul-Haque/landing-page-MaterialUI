@@ -1,4 +1,4 @@
-import { Box, IconButton } from "@mui/material";
+import { Box, Grid, IconButton } from "@mui/material";
 import React, { useState } from "react";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import Tabs from "@mui/material/Tabs";
@@ -21,6 +21,7 @@ const OurWorks = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          mb: 5,
         }}
       >
         <SectionTitle
@@ -87,7 +88,32 @@ const OurWorks = () => {
 
       {/* card section */}
 
-      <CreativeCard />
+      <Grid
+        spacing={3}
+        container
+        sx={{
+          justifyContent: "center",
+        }}
+      >
+        <Grid item>
+          <CreativeCard />
+        </Grid>
+        <Grid item>
+          <CreativeCard />
+        </Grid>
+        <Grid item>
+          <CreativeCard />
+        </Grid>
+        <Grid item>
+          <CreativeCard />
+        </Grid>
+        <Grid item>
+          <CreativeCard />
+        </Grid>
+        <Grid item>
+          <CreativeCard />
+        </Grid>
+      </Grid>
     </Box>
   );
 };
