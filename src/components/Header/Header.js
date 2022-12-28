@@ -56,6 +56,7 @@ function Header(props) {
           backgroundColor: "transparent",
           boxShadow: "none",
           mt: 2,
+          position: "static",
         }}
       >
         <Container>
